@@ -16,9 +16,16 @@ public class JdbcUtil {
 		
 		try {
 			Class.forName("com.mysql.jdbc.Driver"); //加载数据库驱动
-			return  DriverManager.getConnection("jdbc:mysql://localhost:3306/bmsadmin","root","");//建立数据库的链接
+			  Connection Connection= DriverManager.getConnection("jdbc:mysql://localhost:3306/bmsadmin","root","");//建立数据库的链接
+			  if(Connection!=null){
+				  System.out.println("数据库连接成功");
+			  }
+			  return Connection;
 		} catch (Exception e) {
+			e.printStackTrace();
+			  System.out.println("数据库连接失败");
 			return null;
+			
 		}
 	}
 	

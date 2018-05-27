@@ -323,14 +323,14 @@ public class ManagementWindow extends JFrame {
 	 * ÃÌº”π‹¿Ì‘±
 	 */
 	public void ClickEvent_Adminadd(){
-		JTextField text_id = new JTextField();
+		final JTextField text_id = new JTextField();
         text_id.setFont(new Font("Œ¢»Ì—≈∫⁄", Font.PLAIN, 16));
         text_id.setForeground(Color.RED);
         text_id.setBounds(410, 206, 182, 30);
         p_1.add(text_id);
         text_id.setColumns(10);
         
-        JTextField text_pwd = new JTextField();
+        final JTextField text_pwd = new JTextField();
         text_pwd.setFont(new Font("Œ¢»Ì—≈∫⁄", Font.PLAIN, 16));
         text_pwd.setForeground(Color.RED);
         text_pwd.setBounds(410, 303, 182, 30);
@@ -384,7 +384,7 @@ public class ManagementWindow extends JFrame {
 	 * …æ≥˝π‹¿Ì‘±
 	 */
 	public void ClickEvent_AdminDelect(){
-			JTextField textField = new JTextField();
+			final JTextField textField = new JTextField();
 	        textField.setFont(new Font("Comic Sans MS", Font.BOLD, 17));
 	        textField.setBounds(361, 261, 200, 37);
 	        p_2.add(textField);
@@ -397,7 +397,7 @@ public class ManagementWindow extends JFrame {
 	        lbl_delect.setBounds(135, 261, 183, 37);
 	        p_2.add(lbl_delect);
 	        
-	        JLabel lblNewLabel_2 = new JLabel();
+	        final JLabel lblNewLabel_2 = new JLabel();
 	        lblNewLabel_2.setFont(new Font("Œ¢»Ì—≈∫⁄ Light", Font.PLAIN, 19));
 	        lblNewLabel_2.setHorizontalAlignment(SwingConstants.CENTER);
 	        lblNewLabel_2.setBounds(361, 541, 200, 37);
@@ -455,25 +455,25 @@ public class ManagementWindow extends JFrame {
 			rdbtnUser.setContentAreaFilled(false);
 			//*******end*******//
       
-		        JTextField textField_name = new JTextField();
+		        final JTextField textField_name = new JTextField();
 		        textField_name.setFont(new Font("Œ¢»Ì—≈∫⁄", Font.PLAIN, 18));
 		        textField_name.setBounds(149, 310, 208, 35);
 		        p_3.add(textField_name);
 		        textField_name.setColumns(10);
 		        
-		        JTextField textField_numer = new JTextField();
+		        final JTextField textField_numer = new JTextField();
 		        textField_numer.setFont(new Font("Comic Sans MS", Font.PLAIN, 18));
 		        textField_numer.setColumns(10);
 		        textField_numer.setBounds(638, 196, 208, 35);
 		        p_3.add(textField_numer);
 		        
-		        JTextField textField_pwd = new JTextField();
+		        final JTextField textField_pwd = new JTextField();
 		        textField_pwd.setFont(new Font("Comic Sans MS", Font.PLAIN, 18));
 		        textField_pwd.setColumns(10);
 		        textField_pwd.setBounds(638, 310, 208, 35);
 		        p_3.add(textField_pwd);
 		        
-		        JTextField textField_id = new JTextField();
+		        final JTextField textField_id = new JTextField();
 		        textField_id.setFont(new Font("Comic Sans MS", Font.PLAIN, 18));
 		        textField_id.setColumns(10);
 		        textField_id.setBounds(149, 196, 208, 35);
@@ -573,7 +573,7 @@ public class ManagementWindow extends JFrame {
 			rdbtnAdmin.setContentAreaFilled(false);//…Ë÷√◊Èº˛Õ∏√˜
 			rdbtnUser.setContentAreaFilled(false);
 		//******end**************//
-			JTextField textField_lodID = new JTextField();
+			final JTextField textField_lodID = new JTextField();
 	        textField_lodID.setFont(new Font("Œ¢»Ì—≈∫⁄", Font.PLAIN, 18));
 	        textField_lodID.setColumns(10);
 	        textField_lodID.setBounds(292, 231, 208, 35);
@@ -585,7 +585,7 @@ public class ManagementWindow extends JFrame {
 	        label_id.setBounds(79, 229, 190, 35);
 	        p_4.add(label_id);	
 			
-	    JTextField textField_name = new JTextField();
+	    final JTextField textField_name = new JTextField();
         textField_name.setFont(new Font("Œ¢»Ì—≈∫⁄", Font.PLAIN, 18));
         textField_name.setColumns(10);
         textField_name.setBounds(195, 344, 208, 35);
@@ -603,7 +603,7 @@ public class ManagementWindow extends JFrame {
         label_1.setBounds(54, 441, 127, 35);
         p_4.add(label_1);
         
-        JTextField textField_pwd = new JTextField();
+        final JTextField textField_pwd = new JTextField();
         textField_pwd.setFont(new Font("Comic Sans MS", Font.PLAIN, 18));
         textField_pwd.setColumns(10);
         textField_pwd.setBounds(641, 344, 208, 35);
@@ -669,7 +669,7 @@ public class ManagementWindow extends JFrame {
         label.setBounds(209, 247, 224, 37);
         p_5.add(label);
         
-        JTextField textField_1 = new JTextField();
+        final JTextField textField_1 = new JTextField();
         textField_1.setFont(new Font("Comic Sans MS", Font.BOLD, 17));
         textField_1.setColumns(10);
         textField_1.setBounds(476, 247, 200, 37);
@@ -704,13 +704,13 @@ public class ManagementWindow extends JFrame {
         label.setBounds(62, 31, 224, 37);
         p_6.add(label);
         
-        JTextField textField_1 = new JTextField();
+        final JTextField textField_1 = new JTextField();
         textField_1.setFont(new Font("Comic Sans MS", Font.BOLD, 17));
         textField_1.setColumns(10);
         textField_1.setBounds(353, 32, 200, 37);
         p_6.add(textField_1);
         
-        JTextPane textQuery = new JTextPane();
+        final JTextPane textQuery = new JTextPane();
         textQuery.setForeground(Color.BLUE);
         textQuery.setOpaque(false);
         textQuery.setEditable(false);
@@ -772,7 +772,7 @@ public class ManagementWindow extends JFrame {
 		        label_select.setBounds(67, 118, 127, 35);
 		        p_7.add(label_select);
 			
-		 	JComboBox<String> comboBox = new JComboBox<String>();
+		 	final JComboBox<String> comboBox = new JComboBox<String>();
 	        comboBox.setFont(new Font("Œ¢»Ì—≈∫⁄ Light", Font.PLAIN, 18));
 	        comboBox.setModel(new DefaultComboBoxModel<String>(new String[] {"-->«Î—°‘Ò--<",
 	        		"º∆À„ª˙",
@@ -784,7 +784,7 @@ public class ManagementWindow extends JFrame {
 	        comboBox.setBounds(206, 472, 138, 35);
 	        p_7.add(comboBox);
 	        
-	        JTextField text_id = new JTextField();
+	        final JTextField text_id = new JTextField();
 	        text_id.setFont(new Font("Comic Sans MS", Font.PLAIN, 18));
 	        text_id.setColumns(10);
 	        text_id.setBounds(191, 257, 208, 35);
@@ -802,13 +802,13 @@ public class ManagementWindow extends JFrame {
 	        label_name.setBounds(528, 259, 127, 35);
 	        p_7.add(label_name);
 	        
-	        JTextField text_name = new JTextField();
+	        final JTextField text_name = new JTextField();
 	        text_name.setFont(new Font("Œ¢»Ì—≈∫⁄ Light", Font.PLAIN, 18));
 	        text_name.setColumns(10);
 	        text_name.setBounds(680, 257, 208, 35);
 	        p_7.add(text_name);
 	        
-	        JTextField text_press = new JTextField();
+	        final JTextField text_press = new JTextField();
 	        text_press.setFont(new Font("Œ¢»Ì—≈∫⁄ Light", Font.PLAIN, 18));
 	        text_press.setColumns(10);
 	        text_press.setBounds(680, 371, 208, 35);
@@ -820,7 +820,7 @@ public class ManagementWindow extends JFrame {
 	        label_press.setBounds(528, 371, 127, 35);
 	        p_7.add(label_press);
 	        
-	        JTextField text_author = new JTextField();
+	        final JTextField text_author = new JTextField();
 	        text_author.setFont(new Font("Œ¢»Ì—≈∫⁄", Font.PLAIN, 18));
 	        text_author.setColumns(10);
 	        text_author.setBounds(191, 371, 208, 35);
@@ -964,7 +964,7 @@ public class ManagementWindow extends JFrame {
         label.setBounds(27, 56, 289, 37);
         p_8.add(label);
         
-        JTextField textField_FindBook = new JTextField();
+        final JTextField textField_FindBook = new JTextField();
         textField_FindBook.setFont(new Font("Comic Sans MS", Font.BOLD, 17));
         textField_FindBook.setColumns(10);
         textField_FindBook.setBounds(356, 57, 200, 37);
@@ -992,13 +992,13 @@ public class ManagementWindow extends JFrame {
 	 * ≤È—ØÕº È
 	 */
 	public void ClickEvent_QueryBooks(){
-		 	JComboBox<String> comboBox = new JComboBox<String>();
+		 	final JComboBox<String> comboBox = new JComboBox<String>();
 	        comboBox.setModel(new DefaultComboBoxModel<String>(new String[] {"-->«Î—°‘Ò≤È—Ø¿‡–Õ--<", " È∫≈"," È√˚","◊˜’ﬂ","≥ˆ∞Ê…Á","¿‡–Õ","»´≤ø"}));
 	        comboBox.setFont(new Font("Œ¢»Ì—≈∫⁄ Light", Font.PLAIN, 16));
 	        comboBox.setBounds(74, 61, 195, 32);
 	        p_10.add(comboBox);
 	        
-	        JTextField textField_QueryBook = new JTextField();
+	        final JTextField textField_QueryBook = new JTextField();
 	        textField_QueryBook.setFont(new Font("Œ¢»Ì—≈∫⁄ Light", Font.PLAIN, 16));
 	        textField_QueryBook.setBounds(338, 61, 214, 32);
 	        p_10.add(textField_QueryBook);
@@ -1067,13 +1067,13 @@ public class ManagementWindow extends JFrame {
         label_tishi.setBounds(301, 134, 289, 37);
         p_9.add(label_tishi);
         
-        JTextField textField_Bookid = new JTextField();
+        final JTextField textField_Bookid = new JTextField();
         textField_Bookid.setFont(new Font("Comic Sans MS", Font.BOLD, 17));
         textField_Bookid.setColumns(10);
         textField_Bookid.setBounds(345, 286, 200, 37);
         p_9.add(textField_Bookid);
 
-        JLabel lbl_Prompt = new JLabel();
+        final JLabel lbl_Prompt = new JLabel();
         lbl_Prompt.setFont(new Font("Œ¢»Ì—≈∫⁄", Font.PLAIN, 18));
         lbl_Prompt.setForeground(Color.RED);
         lbl_Prompt.setHorizontalAlignment(SwingConstants.CENTER);

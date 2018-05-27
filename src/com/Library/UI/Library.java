@@ -116,52 +116,52 @@ public class Library extends JFrame {
 	}
 
 	public void SetLabelBtn() {
-		JLabel myuser = new JLabel("我的信息");
+		final JLabel myuser = new JLabel("我的信息");
 		myuser.setHorizontalAlignment(SwingConstants.CENTER);
 		myuser.setForeground(SystemColor.textHighlight);
 		myuser.setFont(new Font("微软雅黑", Font.BOLD, 20));
 		myuser.setBounds(92, 105, 95, 28);
 		getContentPane().add(myuser);
 
-		JLabel updata = new JLabel("更新我的信息");
+		final JLabel updata = new JLabel("更新我的信息");
 		updata.setHorizontalAlignment(SwingConstants.CENTER);
 		updata.setForeground(SystemColor.textHighlight);
 		updata.setFont(new Font("微软雅黑", Font.BOLD, 20));
 		updata.setBounds(92, 177, 125, 28);
 		getContentPane().add(updata);
 
-		JLabel library = new JLabel("图书馆");
+		final JLabel library = new JLabel("图书馆");
 		library.setHorizontalAlignment(SwingConstants.CENTER);
 		library.setForeground(SystemColor.textHighlight);
 		library.setFont(new Font("微软雅黑", Font.BOLD, 20));
 		library.setBounds(92, 251, 95, 28);
 		getContentPane().add(library);
 
-		JLabel book = new JLabel("我借的书");
+		final JLabel book = new JLabel("我借的书");
 		book.setHorizontalAlignment(SwingConstants.CENTER);
 		book.setForeground(SystemColor.textHighlight);
 		book.setFont(new Font("微软雅黑", Font.BOLD, 20));
 		book.setBounds(92, 320, 95, 28);
 		getContentPane().add(book);
 
-		JLabel myuserimg = new JLabel();
+		final JLabel myuserimg = new JLabel();
 		myuserimg.setIcon(new ImageIcon("userimg\\user1.png"));
 		myuserimg.setBounds(0, 81, 240, 70);
 		getContentPane().add(myuserimg);
 
-		JLabel updataimg = new JLabel();
+		final JLabel updataimg = new JLabel();
 		updataimg
 				.setIcon(new ImageIcon("userimg\\updata1.png"));
 		updataimg.setBounds(0, 153, 240, 70);
 		getContentPane().add(updataimg);
 
-		JLabel lbiraryimg = new JLabel();
+		final JLabel lbiraryimg = new JLabel();
 		lbiraryimg
 				.setIcon(new ImageIcon("userimg\\bookall.png"));
 		lbiraryimg.setBounds(0, 225, 240, 70);
 		getContentPane().add(lbiraryimg);
 
-		JLabel bookimg = new JLabel();
+		final JLabel bookimg = new JLabel();
 		bookimg.setIcon(new ImageIcon("userimg\\mybook.png"));
 		bookimg.setBounds(0, 297, 240, 70);
 		getContentPane().add(bookimg);
@@ -351,7 +351,7 @@ public class Library extends JFrame {
 		rdbtnAdmin.setContentAreaFilled(false);// 设置组件透明
 		rdbtnUser.setContentAreaFilled(false);
 
-		JTextField textField_name = new JTextField();
+		final JTextField textField_name = new JTextField();
 		textField_name.setFont(new Font("微软雅黑", Font.PLAIN, 18));
 		textField_name.setColumns(10);
 		textField_name.setBounds(269, 149, 208, 35);
@@ -371,7 +371,7 @@ public class Library extends JFrame {
 		label_1.setBounds(128, 405, 127, 35);
 		p_2.add(label_1);
 
-		JTextField textField_pwd = new JTextField();
+		final JTextField textField_pwd = new JTextField();
 		textField_pwd.setFont(new Font("Comic Sans MS", Font.PLAIN, 18));
 		textField_pwd.setColumns(10);
 		textField_pwd.setBounds(269, 303, 208, 35);
@@ -478,7 +478,7 @@ public class Library extends JFrame {
 	 * 
 	 * @throws SQLException
 	 */
-	public void LoadBookList(String bookid, String bookname, String bookInfo, int x) {
+	public void LoadBookList(final String bookid, final String bookname, String bookInfo, int x) {
 		findsList.add(bookid + "-" + x);
 		JLabel lblNewLabel = new JLabel();
 		lblNewLabel.setIcon(bookimg);
@@ -545,14 +545,14 @@ public class Library extends JFrame {
 	 * 搜索图书的元素组件
 	 */
 	public void FindsBook() {
-		JComboBox<String> comboBox = new JComboBox<String>();
+		final JComboBox<String> comboBox = new JComboBox<String>();
 		comboBox.setBackground(SystemColor.inactiveCaption);
 		comboBox.setModel(new DefaultComboBoxModel<String>(new String[] { "查询类型", "书号", "书名", "作者", "出版社", "类型" }));
 		comboBox.setFont(new Font("微软雅黑 Light", Font.PLAIN, 16));
 		comboBox.setBounds(183, 566, 119, 32);
 		p_3.add(comboBox);
 
-		JTextField findsbook = new JTextField("-搜索-");
+		final JTextField findsbook = new JTextField("-搜索-");
 		findsbook.setHorizontalAlignment(SwingConstants.CENTER); // 设置文本段落格式 居中
 		findsbook.setBackground(SystemColor.inactiveCaption);
 		findsbook.setFont(new Font("微软雅黑", Font.PLAIN, 18));
